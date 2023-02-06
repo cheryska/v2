@@ -1,0 +1,193 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 35vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(89, 131, 252, 1);
+  background-image: linear-gradient(
+    135deg,
+    rgba(89, 131, 252, 1) 0%,
+    rgba(41, 53, 86, 1) 33%,
+    rgba(89, 131, 252, 1) 63%,
+    rgba(89, 206, 252, 1) 79%
+  );
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 5em;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  text-shadow: 7px -3px 6px rgba(135, 135, 146, 1);
+  border-radius: 10px;
+  background-color: rgba(89, 131, 252, 1);
+  background-image: radial-gradient(
+    circle,
+    rgba(89, 131, 252, 1) 24%,
+    rgba(221, 22, 26, 1) 100%
+  );
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: rgba(89, 131, 252, 1);
+  background-image: radial-gradient(
+    circle,
+    rgba(89, 131, 252, 1) 24%,
+    rgba(221, 22, 26, 1) 72%
+  );
+}
+
+button:active {
+  background-color: rgba(89, 131, 252, 1);
+  background-image: radial-gradient(
+    circle,
+    rgba(221, 22, 26, 1) 72%,
+    rgba(89, 131, 252, 1) 24%
+  );
+}
+
+.border {
+  border: 2px solid black;
+}
+.screen {
+  flex: 4;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1.3fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "wynik wynik wynik wynik"
+    "wynik wynik wynik wynik"
+    "elA znak znak elB";
+}
+
+.screen > div {
+  background-color: green;
+  margin: 1%;
+  border: 5px solid black;
+}
+
+.wynik {
+  grid-area: wynik;
+  font-size: 10cqmax;
+  text-align: center;
+}
+
+.elA {
+  grid-area: elA;
+}
+
+.znak {
+  grid-area: znak;
+}
+
+.elB {
+  grid-area: elB;
+}
+
+.lFont {
+  font-size: 5cqmax;
+  text-align: center;
+}
+
+.symbol {
+  flex: 10;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.3em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "asPlus asMinus asMnoz asDziel"
+    "an1 an2 an3 adel"
+    "an4 an5 an6 adel"
+    "an7 an8 an9 afinishHim"
+    "an10 an10 adot afinishHim";
+}
+
+.asPlus {
+  grid-area: asPlus;
+}
+
+.asMinus {
+  grid-area: asMinus;
+}
+
+.asMnoz {
+  grid-area: asMnoz;
+}
+
+.asDziel {
+  grid-area: asDziel;
+}
+
+.an1 {
+  grid-area: an1;
+}
+
+.an2 {
+  grid-area: an2;
+}
+
+.an3 {
+  grid-area: an3;
+}
+
+.an4 {
+  grid-area: an4;
+}
+
+.an5 {
+  grid-area: an5;
+}
+
+.an6 {
+  grid-area: an6;
+}
+
+.an7 {
+  grid-area: an7;
+}
+
+.an8 {
+  grid-area: an8;
+}
+
+.an9 {
+  grid-area: an9;
+}
+
+.an10 {
+  grid-area: an10;
+}
+
+.afinishHim {
+  grid-area: afinishHim;
+}
+
+.adel {
+  grid-area: adel;
+}
+
+.adot {
+  grid-area: adot;
+}
